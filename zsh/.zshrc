@@ -5,8 +5,7 @@ fpath=($fpath "/Users/eugene/.zfunctions")
 source "$(brew --prefix)/etc/profile.d/z.sh"
 
 
-# cd ~/.dotfiles && sudo chmod +x install && ./install
-
+# cd ~/dotfiles && sudo chmod +x install && ./install
 
 #
 # Command aliases

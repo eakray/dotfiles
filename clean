@@ -2,7 +2,7 @@
 
 STOW_FOLDERS="gitconfig,tmux,vim,zsh"
 
-DOT_FILES=$HOME/.dotfiles
+DOT_FILES=$HOME/dotfiles
 
 pushd $DOT_FILES
 for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
