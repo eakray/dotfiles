@@ -7,6 +7,7 @@ source "$(brew --prefix)/etc/profile.d/z.sh"
 
 # cd ~/dotfiles && sudo chmod +x install && ./install
 # brew bundle dump
+# brew bundle install
 
 
 #
