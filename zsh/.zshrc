@@ -53,12 +53,36 @@ alias scanlocal='nmap -sP 192.168.1.0/24'
 alias dfd='df -h -x squashfs -x tmpfs -x devtmpfs'
 alias editenv='$EDITOR ~/.env.zsh && source ~/.env.zsh && echo "Reloaded environment variables"'
 alias editbrew='$EDITOR ~/github/lmullen/dotfiles/homebrew/Schaff.Brewfile'
+alias reload="source $HOME/.zshrc"
 
 unalias z 2> /dev/null
 
 #
+# Options
+#
+
+setopt hist_ignore_all_dups # remove older duplicate entries from history
+setopt hist_reduce_blanks # remove superfluous blanks from history items
+setopt inc_append_history # save history entries as soon as they are entered
+setopt share_history # share history between different instances of the shell
+setopt correct_all # autocorrect commands
+setopt auto_list # automatically list choices on ambiguous completion
+setopt always_to_end # move cursor to end if word had one match
+
+zstyle ':completion:*' group-name '' # group results by category
+
+setopt  autocd autopushd \ pushdignoredups
+
+#
 # Functions
 #
+
+
+# Tab title
+# sets the tab title to current dir
+precmd() {
+  echo -ne "\e]1;${PWD##*/}\a"
+}
 
 function shell () {
   ps | grep `echo $$` | awk '{ print $4 }'
