@@ -5,13 +5,15 @@
 (setq custom-safe-themes t)
 
 (use-package color-theme-sanityinc-solarized)
+(use-package gruvbox-theme)
+
 (use-package color-theme-sanityinc-tomorrow
   :ensure t
   :config
-  (load-theme 'sanityinc-tomorrow-bright t))
+  (load-theme 'gruvbox-dark-hard t))
 
 ;; If you don't customize it, this is the theme you get.
-(setq-default custom-enabled-themes '(sanityinc-tomorrow-bright))
+(setq-default custom-enabled-themes '(gruvbox-dark-hard))
 
 ;; Ensure that themes will be applied even if they have not been customized
 (defun reapply-themes ()
@@ -34,6 +36,12 @@
   "Activate a dark color theme."
   (interactive)
   (setq custom-enabled-themes '(sanityinc-tomorrow-bright))
+  (reapply-themes))
+
+(defun gruv ()
+  "Activate the gruvbox dark hard theme."
+  (interactive)
+  (setq custom-enabled-themes '(gruvbox-dark-hard))
   (reapply-themes))
 
 (setq default-frame-alist
@@ -59,7 +67,7 @@
 
 ;; setting default font (get font working correctly)
 (add-to-list 'default-frame-alist
-	     '(font . "Comic Mono-15"))
+	     '(font . "Comic Mono-16"))
 
 (provide 'init-themes)
 ;;; init-themes.el ends here
