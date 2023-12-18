@@ -9,6 +9,7 @@
   :custom
   (js-indent-level 4))
 
+;; https://github.com/dgutov/mmm-mode/blob/master/mmm-vars.el
 (use-package vue-mode
   :config
   (setq mmm-submode-decoration-level 0))
