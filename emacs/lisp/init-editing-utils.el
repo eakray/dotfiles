@@ -106,7 +106,5 @@
       (setq use-short-answers t)
     (advice-add 'yes-or-no-p :override #'y-or-n-p)))
 
-(global-set-key (kbd "C-c b") 'project-list-buffers)
-
 (provide 'init-editing-utils)
 ;;; init-editing-utils.el ends here
