@@ -137,5 +137,14 @@
 
 (setq-default indicate-buffer-boundaries 'left)
 
+;; Set default tab width to 4 spaces
+(setq-default tab-width 4)
+
+;; Use spaces instead of tabs
+(setq-default indent-tabs-mode nil)
+
+;; Specific settings for JavaScript
+(setq js-indent-level 4)
+
 (provide 'init-config)
 ;;; init-config.el ends here

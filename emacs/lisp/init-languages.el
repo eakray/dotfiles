@@ -7,7 +7,7 @@
 (use-package js
   :mode (("\\.js\\'" . js-mode))
   :custom
-  (js-indent-level 4))
+  (js-indent-level 2))
 
 ;; https://github.com/dgutov/mmm-mode/blob/master/mmm-vars.el
 (use-package vue-mode
