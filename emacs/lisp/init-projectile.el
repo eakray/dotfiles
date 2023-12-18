@@ -16,14 +16,13 @@
 
 (global-set-key (kbd "C-c p") 'projectile-switch-project)
 (global-set-key (kbd "C-c f") 'projectile-find-file)
-(global-set-key (kbd "C-x d") 'projectile-dired)
 
 
-(use-package consult-project-extra
-  :ensure t
-  :bind
-  ("C-c b" . consult-project-extra-find))
+;;(maybe-require-package 'ibuffer-projectile))
 
 
 (provide 'init-projectile)
 ;;; init-projectile.el ends here
+
+
+

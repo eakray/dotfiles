@@ -1,5 +1,13 @@
+;;; init-dired.el --- Dired customisations -*- lexical-binding: t -*-
+;;; Commentary:
+;;; Code:
+
+
 (setq-default dired-dwim-target t)
-(add-hook 'dired-mode-hook 'hl-line-mode)
+
+;; Prefer g-prefixed coreutils version of standard utilities when available
+(let ((gls (executable-find "gls")))
+  (when gls (setq insert-directory-program gls)))
 
 (use-package diredfl)
 (add-hook 'dired-mode-hook 'diredfl-mode)
@@ -13,8 +21,9 @@
 (define-key dired-mode-map (kbd "C-c C-q") 'wdired-change-to-wdired-mode)
 
 (use-package diff-hl)
-(with-eval-after-load 'dired 
+(with-eval-after-load 'dired
     (add-hook 'dired-mode-hook 'diff-hl-dired-mode))
 
+
 (provide 'init-dired)
-;;; init-dired.el ends here
+;;; init-dired.el ends here)

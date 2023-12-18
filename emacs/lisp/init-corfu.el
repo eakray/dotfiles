@@ -62,7 +62,8 @@
             corfu-auto-prefix 0
             completion-styles '(basic))
 
-;;(add-hook 'prog-mode-hook #'lsp)
+(add-hook 'prog-mode-hook #'lsp)
+
 
 (provide 'init-corfu)
 ;;; init-corfu.el ends here

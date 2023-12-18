@@ -1,0 +1,1 @@
+/Users/eugene/.emacs.d/straight/repos/highlight-escape-sequences/highlight-escape-sequences.el

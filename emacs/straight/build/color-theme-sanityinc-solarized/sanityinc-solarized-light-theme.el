@@ -1,0 +1,1 @@
+/Users/eugene/.emacs.d/straight/repos/color-theme-sanityinc-solarized/sanityinc-solarized-light-theme.el

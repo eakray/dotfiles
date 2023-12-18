@@ -1,0 +1,1 @@
+/Users/eugene/.emacs.d/straight/repos/mode-line-bell/mode-line-bell.el

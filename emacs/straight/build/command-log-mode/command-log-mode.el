@@ -1,0 +1,1 @@
+/Users/eugene/.emacs.d/straight/repos/command-log-mode/command-log-mode.el

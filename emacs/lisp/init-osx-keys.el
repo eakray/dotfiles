@@ -18,8 +18,5 @@
 (define-key nxml-mode-map (kbd "M-h") nil))
 (global-set-key (kbd "M-ˍ") 'ns-do-hide-others) ;; what describe-key reports for cmd-option-h
 
-;; Enable clipboard support
-;; (setq select-enable-clipboard t)
-
 (provide 'init-osx-keys)
 ;;; init-osx-keys.el ends here

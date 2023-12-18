@@ -1,0 +1,9 @@
+;;; -*- coding: utf-8; -*-
+;;; Automatically generated on Fri Mar 31 22:47:33 2023
+;;; Invoked by eugene.krayni@US-D6GQ3QXQC0 using 28.2
+(setq-default session-file-alist '(("~/.emacs.d/custom.el" 1 nil 1 nil nil 2581 (overwrite-mode))))
+(setq-default file-name-history '("~/.emacs.d/custom.el" "~/code/office-cloud-ui-application/src/client/__tests__/App.test.js" "~/code/" "~/code/cloud-deployment/jenkins/OfficeplComponentsJenkinsfile"))
+(setq-default extended-command-history '("projectile-switch-project" "consult-grep" "dired"))
+(setq-default occur-collect-regexp-history '("\\1"))
+(setq-default slime-connect-host-history '("localhost"))
+(setq-default slime-connect-port-history '("4005"))

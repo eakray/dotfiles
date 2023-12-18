@@ -1,0 +1,1 @@
+/Users/eugene/.emacs.d/straight/repos/embark/embark.texi
