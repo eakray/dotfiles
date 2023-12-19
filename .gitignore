@@ -48,3 +48,10 @@
 
 emacs/cache
 emacs/eln-cache
+emacs/auto-save-list/
+*.eld
+emacs/recentf
+emacs/straight/build-cache.el
+emacs/straight/build/
+emacs/straight/
+emacs/tramp

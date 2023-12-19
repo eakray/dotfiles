@@ -52,7 +52,8 @@
  set-mark-command-repeat-pop t
  tooltip-delay 1.5
  truncate-lines nil
- truncate-partial-width-windows nil)
+ truncate-partial-width-windows nil
+ cursor-type 'bar)
 
 (setq-default display-line-numbers-width 3)
   (add-hook 'prog-mode-hook 'display-line-numbers-mode)

@@ -64,5 +64,14 @@
 ;;(dolist (mode '(org-mode-hook))
 ;;  (add-hook mode (lambda () (display-line-numbers-mode 0))))
 
+
+(add-hook 'emacs-startup-hook
+          (lambda ()
+            (let ((code-dir "~/code")
+                  (home-dir "~/"))
+              (if (file-exists-p code-dir)
+                  (dired code-dir)
+                (dired home-dir)))))
+
 (provide 'init-config)
 ;;; init-config.el ends here

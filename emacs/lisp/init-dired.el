@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
-
+(add-hook 'dired-mode-hook 'hl-line-mode)
 (setq-default dired-dwim-target t)
 
 ;; Prefer g-prefixed coreutils version of standard utilities when available
@@ -24,6 +24,14 @@
 (with-eval-after-load 'dired
     (add-hook 'dired-mode-hook 'diff-hl-dired-mode))
 
+(use-package consult-dir
+  :ensure t
+  :bind (("C-c C-d" . consult-dir)
+         :map minibuffer-local-completion-map
+         ("C-c C-d" . consult-dir)
+         ("C-c C-j" . consult-dir-jump-file)))
+
+(setq consult-dir-project-list-function #'consult-dir-projectile-dirs)
 
 (provide 'init-dired)
 ;;; init-dired.el ends here)

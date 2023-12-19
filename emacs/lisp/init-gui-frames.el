@@ -16,8 +16,8 @@
 (add-hook 'after-init-hook 'default-text-scale-mode)
 
 (when window-system
-  (set-frame-position (selected-frame) 180 0)
-  (set-frame-size (selected-frame) 150 47))
+  (set-frame-position (selected-frame) 400 0)
+  (set-frame-size (selected-frame) 100 40))
 
 (setq frame-title-format
       '((:eval (if (buffer-file-name)
