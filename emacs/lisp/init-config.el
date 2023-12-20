@@ -73,5 +73,9 @@
                   (dired code-dir)
                 (dired home-dir)))))
 
+;; turn off ruler at column 80
+(global-display-fill-column-indicator-mode -1)
+
+
 (provide 'init-config)
 ;;; init-config.el ends here

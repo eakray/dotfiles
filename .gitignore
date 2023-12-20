@@ -55,3 +55,6 @@ emacs/straight/build-cache.el
 emacs/straight/build/
 emacs/straight/
 emacs/tramp
+emacs/url/cache/
+emacs/projectile-bookmarks.eld
+

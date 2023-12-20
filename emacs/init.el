@@ -54,6 +54,7 @@
 (require 'init-corfu)
 (require 'init-smart-mode-line)
 (require 'init-window)
+(require 'init-ligatures)
 
 (use-package vue-mode
   :mode "\\.vue\\'"
