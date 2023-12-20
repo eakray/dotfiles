@@ -55,6 +55,7 @@
 (require 'init-smart-mode-line)
 (require 'init-window)
 (require 'init-ligatures)
+(require 'scratch)
 
 (use-package vue-mode
   :mode "\\.vue\\'"

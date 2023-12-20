@@ -1,1 +1,1 @@
-("~/code/dotfiles/" "~/code/crossword/" "~/code/daily/" "~/code/page-shell/" "~/code/playground/" "~/code/tree-sitter/" "~/code/test/" "~/code/static-vs-dynamic/" "~/code/sourceServer/" "~/code/hooks/" "~/code/etest/" "~/code/emacs.d/" "~/code/emacs/" "~/")
+("~/code/playground/" "~/code/hooks/" "~/code/dotfiles/" "~/code/crossword/" "~/code/daily/" "~/code/page-shell/" "~/code/tree-sitter/" "~/code/test/" "~/code/static-vs-dynamic/" "~/code/sourceServer/" "~/code/etest/" "~/code/emacs.d/" "~/code/emacs/" "~/")
